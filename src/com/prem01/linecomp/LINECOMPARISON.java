@@ -6,7 +6,7 @@ package com.prem01.linecomp;
  * UC3 CHECK EQUALITY OF TWO LINES AND SHOW LINES ARE EQUAL,MORE THEN OR LESS THEN
  *
  * @author prem
- * @version 2.4
+ * @version 2.3
  * @since 10/08/2021
  */
 
