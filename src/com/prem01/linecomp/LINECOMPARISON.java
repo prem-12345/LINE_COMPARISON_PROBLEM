@@ -14,9 +14,13 @@ import java.util.Scanner;
 
 public class LINECOMPARISON {
     public static void main(String[] args) {
-
+        
+        //taking variables for co-ordinates of line 
+        
         int x1, x2, y1, y2;
 
+        //taking user inputs for co-ordinates of line 
+        
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter x1 point");
@@ -28,7 +32,9 @@ public class LINECOMPARISON {
         System.out.println("Enter y2 point");
         y2 = input.nextInt();
 
+        //computing length of line 
         double length = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+        //printing the legth of line
         System.out.println("Length of the line between points " + "(" + x1 + "," + y1 + "),(" + x2 + "," + y2 + ") = " + length);
 
 
