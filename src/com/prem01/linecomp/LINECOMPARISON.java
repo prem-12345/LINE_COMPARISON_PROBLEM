@@ -3,10 +3,10 @@ package com.prem01.linecomp;
 //WELCOME TO LINE COMPARISON COMPUTATION PROGRAMME
 
 /**
- * UC2 CHECK EQUALITY OF TWO LINES BASED ON THE END POINTS
+ * UC3 CHECK EQUALITY OF TWO LINES AND SHOW LINES ARE EQUAL,MORE THEN OR LESS THEN
  *
  * @author prem
- * @version 2.2
+ * @version 2.3
  * @since 10/08/2021
  */
 
@@ -51,9 +51,13 @@ public class LINECOMPARISON {
         System.out.println("Length of line-2 " + "(" + x3 + "," + y3 + "),(" + x4 + "," + y4 + ") = " + length2);
 
         if (length1 == length2) {
-            System.out.println("The given lines are eual");
-        } else {
-            System.out.println("The given lines are not equal");
+            System.out.println("Line-1 and Line-2 are equal");
+        }
+        else if (length1 < length2) {
+            System.out.println("Line-1 is less than Line-2");
+        }
+        else if (length1 > length2) {
+            System.out.println("Line-1 is greater than Line-2");
         }
 
     }
