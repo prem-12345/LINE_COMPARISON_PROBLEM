@@ -1,12 +1,12 @@
 package com.prem01.linecomp;
 
-//WELCOME TO LINE COMPARISON COMPUTATION PROGRAMME
+
 
 /**
- * UC3 CHECK EQUALITY OF TWO LINES AND SHOW LINES ARE EQUAL,MORE THEN OR LESS THEN
+ * WELCOME TO LINE COMPARISON COMPUTATION PROGRAMME
  *
  * @author prem
- * @version 2.3
+ * @version 2.0
  * @since 10/08/2021
  */
 
@@ -14,9 +14,12 @@ import java.util.Scanner;
 
 public class LINECOMPARISON {
     public static void main(String[] args) {
-
+        
+        //taking variables for co-ordinates of line 1
+        
         int x1, x2, y1, y2;
-
+        
+        //taking user inputs for co-ordinates of line 1
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter coordinate of line-1\n" +
@@ -28,11 +31,15 @@ public class LINECOMPARISON {
         y1 = input.nextInt();
         System.out.println("Enter y2 point");
         y2 = input.nextInt();
-
+        
+        //computating length of line 1
         double length1 = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-
+        
+        //taking variables for co-ordinates of line 2
+        
         int x3, x4, y3, y4;
-
+        
+        //taking user inputs for co-ordinates of line 2
         Scanner input2 = new Scanner(System.in);
 
         System.out.println("Enter coordinate of line-2\n" +
@@ -44,12 +51,15 @@ public class LINECOMPARISON {
         y3 = input2.nextInt();
         System.out.println("Enter y4 point");
         y4 = input2.nextInt();
-
+        
+         //computating length of line 2
         double length2 = Math.sqrt((x4 - x3) * (x4 - x3) + (y4 - y3) * (y4 - y3));
-
+        
+        //printing the lengths
         System.out.println("Length of line-1 " + "(" + x1 + "," + y1 + "),(" + x2 + "," + y2 + ") = " + length1);
         System.out.println("Length of line-2 " + "(" + x3 + "," + y3 + "),(" + x4 + "," + y4 + ") = " + length2);
-
+        
+        //comparing the lengths of lines
         if (length1 == length2) {
             System.out.println("Line-1 and Line-2 are equal");
         }
